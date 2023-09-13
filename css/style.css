@@ -8,9 +8,15 @@
     --clr-light-gray: hsl(0, 0%, 81%);
     --clr-light-grayish-blue: hsl(210, 46%, 95%);
 
+    --clr-light-blackish-blue: hsla(217, 30%, 14%, 0.5);
+    --clr-lighter-blackish-blue: hsla(217, 30%, 14%, 0.7);
+
     /* font-weight */
     --fw-bold: 500;
     --fw-bolder: 600;
+
+    /* font-Family */
+    --fnt-barlow-sem-condensed: 'Barlow Semi Condensed', sans-serif, 'Poppins', sans-serif;
 }
 
 /* Box sizing rules */
@@ -48,6 +54,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+    width: 100vw;
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
@@ -55,6 +62,8 @@ body {
     overflow: hidden;
     border: 1px solid red;
     scroll-behavior: smooth;
+    font-family: var(--fnt-barlow-sem-condensed);
+    font-size: 13px;
 }
 
 /* A elements that don't have a class get default styles */
@@ -98,3 +107,4 @@ body {
     display: grid;
     place-content: center;
 }
+
